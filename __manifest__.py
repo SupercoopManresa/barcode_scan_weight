@@ -1,23 +1,22 @@
 # -*- coding: utf-8 -*-
+# Part of Odoo Module Developed by Candidroot Solutions Pvt. Ltd.
+# See LICENSE file for full copyright and licensing details.
+
 {
-    'name': "Website Language Selector",
-
-    'summary': """Move the language select to the menu""",
-
-    'description': """Move the language select to the menu""",
-
-    'author': "Safyric Co., Ltd.",
-    'website': "https://www.safyric.com",
-
-    'category': 'Website',
-    'version': '12.0.0.1',
-
-    # any module necessary for this one to work correctly
-    'depends': ['website'],
-
-    # always loaded
-    'data': [
-        'views/website_template.xml',
-    ],
+    'name': 'Barcode Scan With Weight Screen',
+    'version': '10.0.1.0.1',
+    'category': 'Point Of Sale',
+    'author': 'Candidroot Solutions Pvt. Ltd.',
+    'license': 'AGPL-3',
+    'website': 'https://www.candidroot.com',
+    'summary': 'Barcode Scan With Weight Screen',
+    'description': """
+                    Open weight screen when you scan the product with barcode if product has weight feature enable.
+                    """,
+    'depends': ['point_of_sale'],
+    'data': ['views/barcode.xml'],
+    'images': ['static/description/banner.jpg'],
     'installable': True,
+    'auto_install': False,
+    'application': False
 }
